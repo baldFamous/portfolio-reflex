@@ -1,24 +1,22 @@
 import reflex as rx
+from portfolio_reflex.styles.styles import STACKS_STYLE
 
 def stacks() -> rx.Component:
     return rx.vstack(
         rx.heading("Habilidades"),
         rx.hstack(
             rx.card(
-                rx.heading("tecnologia1"),
-                rx.text("Aquí va la experiencia"),
+                rx.heading("Python"),
+                rx.text("+2 years of on-hands experience"),
             ),
             rx.card(
-                rx.heading("tecnologia2"),
-                rx.text("Aquí van los proyectos"),
+                rx.heading("Java"),
+                rx.text("+1 year of on-hands experience"),
             ),
             rx.card(
-                rx.heading("tecnologia3"),
-                rx.text("Aquí van las tecnologías"),
+                rx.heading("GIT"),
+                rx.text("+2 years of on-hands experience"),
             ),
-            rx.card(
-                rx.heading("tecnologia4"),
-                rx.text("Aquí va la formación"),
-            ),
-        )
+        ),
+        style=STACKS_STYLE,
     )
