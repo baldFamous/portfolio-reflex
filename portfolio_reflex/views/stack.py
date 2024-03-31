@@ -2,21 +2,33 @@ import reflex as rx
 from portfolio_reflex.styles.styles import STACKS_STYLE
 
 def stacks() -> rx.Component:
+    skills = {
+        "Python": ["Django", "Pandas", "Math", "Seaborn", "Sklearn", "Pyspark"],
+        "Base de datos": ["Mysql", "Postgresql", "Sqlite"],
+        "Control de version": ["GitHub"],
+        "AWS": ["EC2", "Lambda", "Step Functions", "Glue", "S3"],
+    }
+
+    def create_skill_sublist(skill_name, subskills):
+        return rx.vstack(
+            rx.text(skill_name, style={"fontWeight": "bold"}),
+            *[
+                rx.text(f"— {subskill}")
+                for subskill in subskills
+            ],
+            style={"marginLeft": "2rem"}
+        )
+
+    # Componentes de habilidades individuales con sublistas
+    skill_components = [
+        create_skill_sublist(skill, subskills)
+        for skill, subskills in skills.items()
+    ]
+
     return rx.vstack(
         rx.heading("Habilidades"),
-        rx.hstack(
-            rx.card(
-                rx.heading("Python"),
-                rx.text("+2 years of on-hands experience"),
-            ),
-            rx.card(
-                rx.heading("Java"),
-                rx.text("+1 year of on-hands experience"),
-            ),
-            rx.card(
-                rx.heading("GIT"),
-                rx.text("+2 years of on-hands experience"),
-            ),
+        rx.stack(
+            *skill_components,
         ),
-        style=STACKS_STYLE,
+        style={"padding": "1rem"}
     )

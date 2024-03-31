@@ -1,26 +1,22 @@
-NAV_BAR_STYLE = {
+ABOUT_STYLE = {
     "display": "flex",
-    "justifyContent": "space-evenly",  # This will distribute the spacing evenly
-    "alignItems": "center",
-    "padding": "10px 0",  # Slightly reduce the padding for a sleeker look
-    "backgroundColor": "#20232a",  # A dark grey that's easier on the eyes than pure black
-    "color": "#61dafb",  # A bright color for the links, often used in tech/design themes
-    "fontFamily": "'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
-    "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",  # A more nuanced shadow for depth
-    "position": "fixed",  # Changed to 'fixed' to remain at the top when scrolling
-    "top": "0",
-    "left": "0",
-    "right": "0",
-    "zIndex": "1000",  # Ensure it stays above other content
-    "height": "50px",  # A moderate height for the nav bar
-    "borderBottom": "2px solid #61dafb",  # A bottom border to highlight the nav bar
+    "flexDirection": "column",
+    "alignItems": "center",  # Asegura que el contenido esté centrado horizontalmente
+    "justifyContent": "center",  # Centra el contenido verticalmente si es necesario
+    "textAlign": "center",  # Centra el texto dentro de los bloques de texto
+    "padding": "4rem 0",  # Agrega un padding generoso para una presentación espaciosa
+    "color": "#ffffff",  # Define el color del texto para los bloques de texto
+    "width": "100%",  # Utiliza todo el ancho disponible
+    "maxWidth": "900px",  # Establece un ancho máximo para el contenido
+    "margin": "0 auto",  # Margen automático para centrar el bloque en la página
+    "gap": "1rem",  # Espacio entre los componentes verticales
 }
 
-
-ABOUT_STYLE = {
-    "textAlign": "center",
-    "padding": "4rem 0",  # Add generous padding for airy presentation
-    "color": "#ffffff",  # Light grey background for the about section
+# Asegúrate de que los elementos internos también estén centrados
+BUTTON_STYLE = {
+    "colorScheme": "purple",  # Asume que este estilo existe y aplica el esquema de color
+    "margin": "0.5rem",  # Añade márgenes alrededor de los botones para separación
+    # Otros estilos para tus botones aquí
 }
 
 
@@ -29,6 +25,15 @@ STACKS_STYLE = {
     "justifyContent": "space-around",
     "flexWrap": "wrap",  # This allows the contents to wrap on smaller screens
     "padding": "2rem",
+}
+
+
+EXPERIENCE_STYLE = {
+    "display": "flex",
+    "justifyContent": "space-around",
+    "flexWrap": "wrap",
+    "padding": "2rem",
+    "marginBottom": "2rem"
 }
 
 
@@ -57,22 +62,9 @@ CARD_STYLE = {
 }
 
 
-CONTACT_STYLE = {
-    "display": "flex",
-    "flexDirection": "column",
-    "width": "50%",
-    "maxWidth": "500px",
-    "margin": "2rem auto",
-    "padding": "2rem",
-    "boxShadow": "0 4px 8px rgba(0, 0, 0, 0.1)",
-    "borderRadius": "8px",
-    "backgroundColor": "#f9f9f9",
-}
-
-
 PAGE_CONTAINER_STYLE = {
-    "paddingTop": "134px",  # Adjust the top padding to the height of your navbar
-    "paddingBottom": "20px",
+    "paddingTop": "30px",  # Adjust the top padding to the height of your navbar
+    "paddingBottom": "50px",
     "paddingLeft": "40px",
     "paddingRight": "20px",
     #"backgroundColor": "#fffff",  # Set a base background color for the page
