@@ -6,15 +6,16 @@ def projects() -> rx.Component:
         rx.heading("Proyectos"),
         rx.hstack(
             rx.card(
-                rx.image(src="favicon.ico", style=IMAGE_STYLE),
+                rx.image(src="project1.png", style=IMAGE_STYLE),
                 rx.heading("Proyecto 1"),
-                rx.text("Descripción del proyecto 1"),
+                rx.text(""
+                        "Proyecto "),
                 rx.link(
                     rx.button(
                         rx.icon("link"),
                         color_scheme="purple",
                     ),
-                    href="https://github.com/baldFamous",
+                    href="https://github.com/baldFamous/sismo_project_frogmi",
                     is_external=True
                 ),
                 style=CARD_STYLE,
