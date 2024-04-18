@@ -5,7 +5,7 @@ ABOUT_STYLE = {
     "justifyContent": "center",  # Centra el contenido verticalmente si es necesario
     "textAlign": "center",  # Centra el texto dentro de los bloques de texto
     "padding": "4rem 0",  # Agrega un padding generoso para una presentación espaciosa
-    "color": "#ffffff",  # Define el color del texto para los bloques de texto
+    #"color": "#ffffff",  # Define el color del texto para los bloques de texto
     "width": "100%",  # Utiliza todo el ancho disponible
     "maxWidth": "900px",  # Establece un ancho máximo para el contenido
     "margin": "0 auto",  # Margen automático para centrar el bloque en la página
@@ -58,6 +58,8 @@ CARD_STYLE = {
     "margin": "1rem",
     "padding": "1rem",
     "borderRadius": "10px",
+    "minWidth": "300px",
+    "maxWidth": "300px",
     #"backgroundColor": "#f9f9f9",
 }
 
@@ -67,7 +69,7 @@ PAGE_CONTAINER_STYLE = {
     "paddingBottom": "50px",
     "paddingLeft": "40px",
     "paddingRight": "20px",
-    #"backgroundColor": "#fffff",  # Set a base background color for the page
+    "backgroundColor": "#fffff",  # Set a base background color for the page
     "minHeight": "100vh",  # Make sure the page container takes minimum height of the viewport
     "boxSizing": "border-box",
 }

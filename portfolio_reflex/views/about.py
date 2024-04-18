@@ -5,7 +5,7 @@ from portfolio_reflex.styles.styles import ABOUT_STYLE, BUTTON_STYLE
 def about() -> rx.Component:
     return rx.stack(
         rx.heading("Bastian Rodriguez, programador junior", style={"marginBottom": "1rem"}),
-        rx.image(src="favicon.ico", height="200px", width="200px", style={"alignSelf": "center"}),
+        rx.image(src="principal.png", height="200px", width="200px", style={"alignSelf": "center"}),
         rx.text(
             "Hola, soy bastian, soy un programador especializado principalmente en python, "
             "en el Backend web y también en el Análisis de datos. "

@@ -7,9 +7,10 @@ def projects() -> rx.Component:
         rx.hstack(
             rx.card(
                 rx.image(src="project1.png", style=IMAGE_STYLE),
-                rx.heading("Proyecto 1"),
+                rx.heading("Sismo Management"),
                 rx.text(""
-                        "Proyecto "),
+                        "Aplicación diseñada para conocer el estado de los sismos "
+                        "provenientes de la plataforma USGS, enfocado en EEUU"),
                 rx.link(
                     rx.button(
                         rx.icon("link"),
@@ -21,15 +22,16 @@ def projects() -> rx.Component:
                 style=CARD_STYLE,
             ),
             rx.card(
-                rx.image(src="favicon.ico", style=IMAGE_STYLE),
-                rx.heading("Proyecto 2"),
-                rx.text("Descripción del proyecto 2"),
+                rx.image(src="project2.png", style=IMAGE_STYLE),
+                rx.heading("Gestor de eventos"),
+                rx.text("Aplicación basica diseñada para gestionar eventos. "
+                        "Diseñada para postular a BlackNexus SPA"),
                 rx.link(
                     rx.button(
                         rx.icon("link"),
                         color_scheme="purple",
                     ),
-                    href="https://github.com/baldFamous",
+                    href="https://github.com/baldFamous/desafio_blacknexus",
                     is_external=True
                 ),
                 style=CARD_STYLE,
@@ -47,7 +49,7 @@ def projects() -> rx.Component:
                     is_external=True
                 ),
                 style=CARD_STYLE,
-            ),
+            )
 
         ),
         rx.hstack(
