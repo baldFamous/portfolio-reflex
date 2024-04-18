@@ -20,8 +20,7 @@ def index() -> rx.Component:
         projects(),
         rx.spacer(),
         experience(),
-        style=PAGE_CONTAINER_STYLE,
-
+        style=PAGE_CONTAINER_STYLE
     )
 
 

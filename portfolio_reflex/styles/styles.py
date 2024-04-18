@@ -47,7 +47,7 @@ PROJECTS_STYLE = {
 
 IMAGE_STYLE = {
     "height": "200px",
-    "width": "auto",
+    "width": "350px",
     "borderRadius": "10px",
 }
 
@@ -58,8 +58,8 @@ CARD_STYLE = {
     "margin": "1rem",
     "padding": "1rem",
     "borderRadius": "10px",
-    "minWidth": "300px",
-    "maxWidth": "300px",
+    "width": "100%",
+    "maxWidth": "600px",
     #"backgroundColor": "#f9f9f9",
 }
 
@@ -72,4 +72,10 @@ PAGE_CONTAINER_STYLE = {
     "backgroundColor": "#fffff",  # Set a base background color for the page
     "minHeight": "100vh",  # Make sure the page container takes minimum height of the viewport
     "boxSizing": "border-box",
+    # centraliza el contenido en el contenedor de la página
+    "display": "flex",
+    "flexDirection": "column",
+    "alignItems": "center",
+    "justifyContent": "center",
+
 }

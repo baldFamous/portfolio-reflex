@@ -1,5 +1,5 @@
 import reflex as rx
-from portfolio_reflex.styles.styles import ABOUT_STYLE, BUTTON_STYLE
+from portfolio_reflex.styles.styles import ABOUT_STYLE, BUTTON_STYLE, PROJECTS_STYLE
 
 
 def about() -> rx.Component:
@@ -7,16 +7,16 @@ def about() -> rx.Component:
         rx.heading("Bastian Rodriguez, programador junior", style={"marginBottom": "1rem"}),
         rx.image(src="principal.png", height="200px", width="200px", style={"alignSelf": "center"}),
         rx.text(
-            "Hola, soy bastian, soy un programador especializado principalmente en python, "
+            "Hola, soy bastian, un programador especializado principalmente en Python, "
             "en el Backend web y también en el Análisis de datos. "
-            "En esta web encontrarás mis proyectos de ambas áreas más destacados, "
+            "En esta web encontrarás mis proyectos de ambas áreas, "
             "así mismo, verás mis redes para saber más de mí.",
             style={"marginBottom": "1rem"}  # Añade espacio debajo del texto
         ),
         rx.stack(
             rx.link(
                 rx.button(
-                    rx.icon("book-open-text"),
+                    rx.icon("book-open-text"), "CV",
                     color_scheme="purple",
                     style=BUTTON_STYLE,
                 ),
@@ -25,7 +25,7 @@ def about() -> rx.Component:
             ),
             rx.link(
                 rx.button(
-                    rx.icon("github"),
+                    rx.icon("github"), "GitHub",
                     color_scheme="purple",
                     style=BUTTON_STYLE,
                 ),
@@ -34,7 +34,7 @@ def about() -> rx.Component:
             ),
             rx.link(
                 rx.button(
-                    rx.icon("linkedin"),
+                    rx.icon("linkedin"), "LinkedIn",
                     color_scheme="purple",
                     style=BUTTON_STYLE,
                 ),
@@ -43,13 +43,19 @@ def about() -> rx.Component:
             ),
             rx.link(
                 rx.button(
-                    rx.icon("mail"),
+                    rx.icon("mail"), "Contacto",
                     color_scheme="purple",
                     style=BUTTON_STYLE,
                 ),
                 href="mailto:curso.bastian@gmail.com"
             ),
-            style={"justifyContent": "center"}
+            style={
+                "display": "flex",
+                "justifyContent": "space-around",
+                "flexWrap": "wrap",
+                "padding": "2rem",
+                "marginBottom": "2rem"
+                }
         ),
         style=ABOUT_STYLE
     )

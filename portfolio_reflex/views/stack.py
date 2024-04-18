@@ -30,5 +30,13 @@ def stacks() -> rx.Component:
         rx.stack(
             *skill_components,
         ),
-        style={"padding": "1rem"}
+        style={
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "width": "100%",
+            "padding": "2rem",
+            "gap": "1rem"
+        }
     )
