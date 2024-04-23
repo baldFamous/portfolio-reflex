@@ -6,7 +6,7 @@ def stacks() -> rx.Component:
         "Python": ["Django", "Pandas", "Math", "Seaborn", "Sklearn", "Pyspark"],
         "Base de datos": ["Mysql", "Postgresql", "Sqlite"],
         "Control de version": ["GitHub"],
-        "AWS": ["EC2", "Lambda", "Step Functions", "Glue", "S3"],
+        #"AWS": ["EC2", "Lambda", "Step Functions", "Glue", "S3"],
     }
 
     def create_skill_sublist(skill_name, subskills):

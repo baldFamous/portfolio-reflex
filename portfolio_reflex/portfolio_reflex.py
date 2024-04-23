@@ -20,10 +20,17 @@ def index() -> rx.Component:
         projects(),
         rx.spacer(),
         experience(),
-        style=PAGE_CONTAINER_STYLE
+        style=PAGE_CONTAINER_STYLE,
+    background = "radial-gradient(circle at 22% 11%, rgba(62, 180, 137, .40), hsla(0, 0%, 100%, 0) 19%), radial-gradient(circle at 82% 25%, rgba(33, 150, 243, .36), hsla(0, 0%, 100%, 0) 35%), radial-gradient(circle at 25% 61%, rgba(250, 128, 114, .56), hsla(0, 0%, 100%, 0) 55%)",
+
+
     )
 
 
+
 app = rx.App(
+    theme=rx.theme(
+        appearance="light", has_background=True, radius="medium", accent_color="mint"
+    ),
 )
 app.add_page(index)
