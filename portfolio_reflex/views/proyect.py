@@ -3,8 +3,9 @@ from portfolio_reflex.styles.styles import PROJECTS_STYLE, CARD_STYLE, IMAGE_STY
 
 def projects() -> rx.Component:
     return rx.stack(
-        rx.heading("Proyectos"),
+
         rx.vstack(
+            rx.heading("Proyectos"),
             rx.card( # Project 1
                 rx.vstack(
                     rx.image(src="project1.png", style=IMAGE_STYLE),
@@ -43,16 +44,17 @@ def projects() -> rx.Component:
             ),
             rx.card( # Project 3
                 rx.vstack(
-                    rx.image(src="favicon.ico", style=IMAGE_STYLE),
-                    rx.heading("Titulo"),
-                    rx.text(""
-                            "Descripción"),
+                    rx.image(src="project3.png", style=IMAGE_STYLE),
+                    rx.heading("Event app 2.0"),
+                    rx.text("Aplicación para la gestión de eventos, con gestion de usuarios y eventos. "
+                            "Principalmente creada para poner en practica técnicas de desarrollo backend y frontend. "
+                            "**Aun por terminar y afinar detalles**"),
                     rx.link(
                         rx.button(
                             rx.icon("link"), "Link a GitHub",
                             color_scheme="purple",
                         ),
-                        href="https://github.com/baldFamous/",
+                        href="https://github.com/baldFamous/app-event-manager",
                         is_external=True
                     )
                 ),
