@@ -3,9 +3,9 @@ from portfolio_reflex.styles.styles import PROJECTS_STYLE, CARD_STYLE, IMAGE_STY
 
 def projects() -> rx.Component:
     return rx.stack(
-
+        rx.heading("Proyectos", style={"textAlign": "center"}),
         rx.vstack(
-            rx.heading("Proyectos"),
+
             rx.card( # Project 1
                 rx.vstack(
                     rx.image(src="project1.png", style=IMAGE_STYLE),
@@ -55,58 +55,6 @@ def projects() -> rx.Component:
                             color_scheme="purple",
                         ),
                         href="https://github.com/baldFamous/app-event-manager",
-                        is_external=True
-                    )
-                ),
-                style=CARD_STYLE
-            ),
-            rx.card( # Project 4
-                rx.vstack(
-                    rx.image(src="favicon.ico", style=IMAGE_STYLE),
-                    rx.heading("Titulo"),
-                    rx.text(""
-                            "Descripción"),
-                    rx.link(
-                        rx.button(
-                            rx.icon("link"), "Link a GitHub",
-                            color_scheme="purple",
-                        ),
-                        href="https://github.com/baldFamous/",
-                        is_external=True
-                    )
-                ),
-                style=CARD_STYLE
-            ),
-
-            rx.card( # Project 5
-                rx.vstack(
-                    rx.image(src="favicon.ico", style=IMAGE_STYLE),
-                    rx.heading("Titulo"),
-                    rx.text(""
-                            "Descripción"),
-                    rx.link(
-                        rx.button(
-                            rx.icon("link"), "Link a GitHub",
-                            color_scheme="purple",
-                        ),
-                        href="https://github.com/baldFamous/",
-                        is_external=True
-                    )
-                ),
-                style=CARD_STYLE
-            ),
-            rx.card( # Project 6
-                rx.vstack(
-                    rx.image(src="favicon.ico", style=IMAGE_STYLE),
-                    rx.heading("Titulo"),
-                    rx.text(""
-                            "Descripción"),
-                    rx.link(
-                        rx.button(
-                            rx.icon("link"), "Link a GitHub",
-                            color_scheme="purple",
-                        ),
-                        href="https://github.com/baldFamous/",
                         is_external=True
                     )
                 ),

@@ -38,10 +38,14 @@ EXPERIENCE_STYLE = {
 
 
 PROJECTS_STYLE = {
-    "display": "grid",
-    "gap": "1rem",
+    "display": "flex",
+    "flexDirection": "column",
+    "alignItems": "center",
+    "justifyContent": "center",
+    "marginRight": "2.5rem",
+    "width": "100%",
     "padding": "2rem",
-    #"backgroundColor": "#ffffff",
+    "gap": "1rem"
 }
 
 

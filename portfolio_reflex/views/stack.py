@@ -16,7 +16,7 @@ def stacks() -> rx.Component:
                 rx.text(f"— {subskill}")
                 for subskill in subskills
             ],
-            style={"marginLeft": "2rem"}
+            style={"marginLeft": "1rem"}
         )
 
     # Componentes de habilidades individuales con sublistas
