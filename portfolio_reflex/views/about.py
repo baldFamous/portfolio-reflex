@@ -4,14 +4,13 @@ from portfolio_reflex.styles.styles import ABOUT_STYLE, BUTTON_STYLE, PROJECTS_S
 
 def about() -> rx.Component:
     return rx.stack(
-        rx.heading("Bastian Rodriguez, programador junior", style={"marginBottom": "1rem"}),
-        rx.image(src="principal.png", height="200px", width="200px", style={"alignSelf": "center"}),
+        rx.heading("Bastian Rodriguez, programador junior", marginBottom="1rem", size="9", ),
+        #rx.image(src="principal.png", height="200px", width="200px", style={"alignSelf": "center"}),
         rx.text(
             "Hola, soy bastian, un programador especializado principalmente en Python, "
             "en el Backend web y también en el Análisis de datos. "
             "En esta web encontrarás mis proyectos de ambas áreas, "
             "así mismo, verás mis redes para saber más de mí.",
-            style={"marginBottom": "1rem"}  # Añade espacio debajo del texto
         ),
         rx.stack(
             rx.link(
@@ -20,7 +19,7 @@ def about() -> rx.Component:
                     color_scheme="purple",
                     style=BUTTON_STYLE,
                 ),
-                href="/data/bastian_rodriguez_cv_es.pdf",
+                href="/data/BASTIAN_CV.pdf",
                 is_external=True
             ),
             rx.link(
@@ -38,7 +37,7 @@ def about() -> rx.Component:
                     color_scheme="purple",
                     style=BUTTON_STYLE,
                 ),
-                href="https://www.linkedin.com/in/bastian-rodriguez-r-8b0781211/",
+                href="https://www.linkedin.com/in/bastian-rodriguez-8b0781211/",
                 is_external=True
             ),
             rx.link(
@@ -47,15 +46,14 @@ def about() -> rx.Component:
                     color_scheme="purple",
                     style=BUTTON_STYLE,
                 ),
-                href="mailto:curso.bastian@gmail.com"
+                href="mailto:bastian3967a@gmail.com"
             ),
-            style={
-                "display": "flex",
-                "justifyContent": "space-around",
-                "flexWrap": "wrap",
-                "padding": "2rem",
-                "marginBottom": "2rem"
-                }
+
+            display="flex",
+            justifyContent="space-around",
+            flexWrap="wrap",
+            padding="2rem",
+
         ),
         style=ABOUT_STYLE
     )

@@ -20,14 +20,6 @@ BUTTON_STYLE = {
 }
 
 
-STACKS_STYLE = {
-    "display": "flex",
-    "justifyContent": "space-around",
-    "flexWrap": "wrap",  # This allows the contents to wrap on smaller screens
-    "padding": "2rem",
-}
-
-
 EXPERIENCE_STYLE = {
     "display": "flex",
     "justifyContent": "space-around",
@@ -81,5 +73,4 @@ PAGE_CONTAINER_STYLE = {
     "flexDirection": "column",
     "alignItems": "center",
     "justifyContent": "center",
-
 }

@@ -3,7 +3,7 @@ from portfolio_reflex.styles.styles import PROJECTS_STYLE, CARD_STYLE, IMAGE_STY
 
 def projects() -> rx.Component:
     return rx.stack(
-        rx.heading("Proyectos", style={"textAlign": "center"}),
+        rx.heading("Proyectos", textAlign="center"),
         rx.vstack(
 
             rx.card( # Project 1
@@ -18,8 +18,8 @@ def projects() -> rx.Component:
                             rx.icon("link"), "Link a GitHub",
                             color_scheme="purple",
                         ),
-                    href="https://github.com/baldFamous/sismo_project_frogmi",
-                    is_external=True
+                        href="https://github.com/baldFamous/sismo_project_frogmi",
+                        is_external=True
                     )
                 ),
                 style=CARD_STYLE

@@ -1,42 +1,49 @@
 import reflex as rx
-from portfolio_reflex.styles.styles import STACKS_STYLE
 
 def stacks() -> rx.Component:
     skills = {
-        "Python": ["Django", "Pandas", "Math", "Seaborn", "Sklearn", "Pyspark"],
-        "Base de datos": ["Mysql", "Postgresql", "Sqlite"],
-        "Control de version": ["GitHub"],
-        #"AWS": ["EC2", "Lambda", "Step Functions", "Glue", "S3"],
+        "Python": ("notebook", ["Django", "Tkinter", "Pandas", "Numpy"]),
+        "Javascript": ("braces", ["React"]),
+        "Base de datos": ("database", ["Mysql", "Postgresql", "Sqlite"]),
+        "Control de version": ("github", ["GitHub"]),
     }
 
-    def create_skill_sublist(skill_name, subskills):
+    def create_skill_sublist(skill_name, icon, subskills):
         return rx.vstack(
-            rx.text(skill_name, style={"fontWeight": "bold"}),
+            rx.hstack(
+                rx.icon(icon, size=30),
+                rx.text(skill_name, fontWeight="bold"),
+            ),
             *[
-                rx.text(f"— {subskill}")
+                rx.text(f"* {subskill}", align="center", justifyContent="center", width="100%")
                 for subskill in subskills
             ],
-            style={"marginLeft": "1rem"}
+            marginLeft="1rem"
         )
 
-    # Componentes de habilidades individuales con sublistas
     skill_components = [
-        create_skill_sublist(skill, subskills)
-        for skill, subskills in skills.items()
+        create_skill_sublist(skill, icon, subskills)
+        for skill, (icon, subskills) in skills.items()
     ]
 
     return rx.vstack(
-        rx.heading("Habilidades"),
+        rx.stack(
+            rx.heading("Habilidades"),
+            display="flex",
+            justifyContent="center",
+            width="100%",
+            marginBottom="1rem"
+        ),
         rx.stack(
             *skill_components,
+            display="flex",
+            flexWrap="wrap",  # Permite que los elementos se envuelvan
+            justifyContent="center",
+            width="100%",
+            marginBottom="1rem",
+            gap="1rem"
         ),
-        style={
-            "display": "flex",
-            "flexDirection": "column",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "width": "100%",
-            "padding": "2rem",
-            "gap": "1rem"
-        }
+        width="100%",
+        padding="2rem",
+
     )
