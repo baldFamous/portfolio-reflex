@@ -21,9 +21,10 @@ def index() -> rx.Component:
         rx.spacer(),
         experience(),
         style=PAGE_CONTAINER_STYLE,
-        background="radial-gradient(circle at 22% 11%, rgba(62, 180, 137, .40), hsla(0, 0%, 100%, 0) 19%), "
-                   "radial-gradient(circle at 82% 25%, rgba(33, 150, 243, .36), hsla(0, 0%, 100%, 0) 35%), "
-                   "radial-gradient(circle at 25% 61%, rgba(250, 128, 114, .56), hsla(0, 0%, 100%, 0) 55%)",
+        background="radial-gradient(circle at 22% 11%, rgba(62, 180, 137, .57), hsla(0, 0%, 100%, 0) 29%), " # verde
+                   "radial-gradient(circle at 82% 29%, rgba(33, 150, 243, .57), hsla(0, 0%, 100%, 0) 35%), " # azul
+                   "radial-gradient(circle at 25% 61%, rgba(250, 128, 114, .57), hsla(0, 0%, 100%, 0) 45%)," # rojo
+                   "radial-gradient(circle at 82% 95%, rgba(190, 214, 74, .57), hsla(0, 0%, 100%, 0) 45%)", # amarillo
 
 
     )
@@ -31,7 +32,7 @@ def index() -> rx.Component:
 
 app = rx.App(
     theme=rx.theme(
-        appearance="dark", has_background=True, radius="medium", accent_color="mint"
+        appearance="light", has_background=False, radius="full", accent_color="mint"
     ),
 )
 app.add_page(index)
