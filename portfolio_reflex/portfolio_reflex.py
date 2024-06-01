@@ -13,6 +13,11 @@ filename = f"{config.app_name}/{config.app_name}.py"
 
 def index() -> rx.Component:
     return rx.vstack(
+        rx.hstack(
+            rx.color_mode.switch(padding_top="2px"),
+            rx.text("Light/Dark")
+        ),
+
         about(),
         rx.spacer(),
         stacks(),
@@ -32,7 +37,7 @@ def index() -> rx.Component:
 
 app = rx.App(
     theme=rx.theme(
-        appearance="light", has_background=False, radius="full", accent_color="mint"
+        has_background=False, radius="full", accent_color="mint"
     ),
 )
 app.add_page(index)

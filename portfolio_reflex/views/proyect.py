@@ -3,7 +3,14 @@ from portfolio_reflex.styles.styles import PROJECTS_STYLE, CARD_STYLE, IMAGE_STY
 
 def projects() -> rx.Component:
     return rx.stack(
-        rx.heading("Proyectos", textAlign="center"),
+        rx.heading("Proyectos",
+                   fontFamily="monospace",
+                   size='7',
+                   display="flex",
+                   justifyContent="center",
+                   width="100%",
+                   marginBottom="1rem"),
+
         rx.vstack(
 
             rx.card( # Project 1

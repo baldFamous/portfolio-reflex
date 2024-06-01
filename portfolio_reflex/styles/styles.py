@@ -45,6 +45,7 @@ IMAGE_STYLE = {
     "height": "200px",
     "width": "350px",
     "borderRadius": "10px",
+    "objectFit": "cover",
 }
 
 

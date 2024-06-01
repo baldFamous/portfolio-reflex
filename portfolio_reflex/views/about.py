@@ -2,15 +2,29 @@ import reflex as rx
 from portfolio_reflex.styles.styles import ABOUT_STYLE, BUTTON_STYLE, PROJECTS_STYLE
 
 
+
 def about() -> rx.Component:
     return rx.stack(
-        rx.heading("Bastian Rodriguez, programador junior", marginBottom="1rem", size="9", ),
-        #rx.image(src="principal.png", height="200px", width="200px", style={"alignSelf": "center"}),
+        rx.badge(
+            rx.flex(
+                rx.icon("check", size=24),
+                rx.text(" Disponible ", size="4"),
+                spacing="1"
+            ),
+            color_scheme="green"
+        ),
+        rx.heading("Bastian Rodriguez, programador junior",
+                   marginBottom="1rem",
+                   size="9",
+                   marginTop="0.1px",
+                   fontFamily="monospace",),
+
         rx.text(
             "Hola, soy bastian, un programador especializado principalmente en Python, "
             "en el Backend web y también en el Análisis de datos. "
             "En esta web encontrarás mis proyectos de ambas áreas, "
             "así mismo, verás mis redes para saber más de mí.",
+            size="5",
         ),
         rx.stack(
             rx.link(
@@ -42,7 +56,7 @@ def about() -> rx.Component:
             ),
             rx.link(
                 rx.button(
-                    rx.icon("mail"), "Contacto",
+                    rx.icon("mail"), "bastian3967a@gmail.com",
                     color_scheme="purple",
                     style=BUTTON_STYLE,
                 ),
@@ -52,7 +66,7 @@ def about() -> rx.Component:
             display="flex",
             justifyContent="space-around",
             flexWrap="wrap",
-            padding="2rem",
+            padding="1rem",
 
         ),
         style=ABOUT_STYLE

@@ -15,7 +15,7 @@ def stacks() -> rx.Component:
                 rx.text(skill_name, fontWeight="bold"),
             ),
             *[
-                rx.text(f"* {subskill}", align="center", justifyContent="center", width="100%")
+                rx.text(f"○ {subskill}", align="center", justifyContent="center", width="100%")
                 for subskill in subskills
             ],
             marginLeft="1rem"
@@ -28,11 +28,12 @@ def stacks() -> rx.Component:
 
     return rx.vstack(
         rx.stack(
-            rx.heading("Habilidades"),
+            rx.heading("Habilidades", fontFamily="monospace", size='7'),
             display="flex",
             justifyContent="center",
             width="100%",
-            marginBottom="1rem"
+            marginBottom="1rem",
+
         ),
         rx.stack(
             *skill_components,
