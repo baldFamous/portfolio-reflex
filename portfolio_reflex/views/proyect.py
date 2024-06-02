@@ -55,7 +55,7 @@ def projects() -> rx.Component:
                     rx.heading("Event app 2.0"),
                     rx.text("Aplicación para la gestión de eventos, con gestion de usuarios y eventos. "
                             "Principalmente creada para poner en practica técnicas de desarrollo backend y frontend. "
-                            "**Aun por terminar y afinar detalles**"),
+                            "**Aun por afinar detalles**"),
                     rx.link(
                         rx.button(
                             rx.icon("link"), "Link a GitHub",
