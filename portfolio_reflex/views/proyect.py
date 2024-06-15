@@ -67,6 +67,34 @@ def projects() -> rx.Component:
                 ),
                 style=CARD_STYLE
             ),
+            rx.card(  # Project 3
+                rx.vstack(
+                    rx.image(src="project4.png", style=IMAGE_STYLE),
+                    rx.heading("Baby Clothing Store"),
+                    rx.text("Pagina web diseñada especialmente para las micro empresas dedicadas a la venta "
+                            "de ropa de bebé, con un diseño minimalista y fácil de usar. demo en github Pages "),
+                    rx.hstack(
+                        rx.link(
+                            rx.button(
+                                rx.icon("link"), "Link a GitHub",
+                                color_scheme="purple",
+                            ),
+                            href="https://github.com/baldFamous/baby-clothing-store_preview",
+                            is_external=True
+                        ),
+                        rx.link(
+                            rx.button(
+                                rx.icon("play"), "Demo",
+                                color_scheme="purple",
+                            ),
+                            href="https://baldfamous.github.io/baby-clothing-store_preview/",
+                            is_external=True
+                        )
+                    ),
+
+                ),
+                style=CARD_STYLE
+            ),
         ),
         style=PROJECTS_STYLE,
     )
