@@ -67,12 +67,12 @@ def projects() -> rx.Component:
                 ),
                 style=CARD_STYLE
             ),
-            rx.card(  # Project 3
+            rx.card(  # Project 4
                 rx.vstack(
                     rx.image(src="project4.png", style=IMAGE_STYLE),
                     rx.heading("Baby Clothing Store"),
                     rx.text("Pagina web diseñada especialmente para las micro empresas dedicadas a la venta "
-                            "de ropa de bebé, con un diseño minimalista y fácil de usar. demo en github Pages "),
+                            "de ropa de bebé, con un diseño minimalista y fácil de usar. Demo con Vercel "),
                     rx.hstack(
                         rx.link(
                             rx.button(
@@ -87,7 +87,7 @@ def projects() -> rx.Component:
                                 rx.icon("play"), "Demo",
                                 color_scheme="purple",
                             ),
-                            href="https://baldfamous.github.io/baby-clothing-store_preview/",
+                            href="https://baby-store-ochre.vercel.app/",
                             is_external=True
                         )
                     ),
