@@ -1,8 +1,5 @@
 import reflex as rx
 from portfolio_reflex.styles.styles import ABOUT_STYLE, BUTTON_STYLE, PROJECTS_STYLE
-
-
-
 def about() -> rx.Component:
     return rx.stack(
         rx.badge(
@@ -13,19 +10,23 @@ def about() -> rx.Component:
             ),
             color_scheme="green"
         ),
-        rx.heading("Bastian Rodriguez, programador junior",
-                   marginBottom="1rem",
+        rx.heading("Bastian Rodriguez",
                    size="9",
                    marginTop="0.1px",
                    fontFamily="monospace",),
 
+        # rx.text("Python Developer",
+        #       marginTop="0.01px",
+        #       marginBottom="1rem",
+        #       fontFamily="monospace",
+        #       size="5",),
+
+
         rx.text(
-            "Hola, soy bastian, un programador especializado principalmente en Python, "
-            "en el Backend web y también en el Análisis de datos. "
-            "En esta web encontrarás mis proyectos de ambas áreas, "
-            "así mismo, verás mis redes para saber más de mí.",
+            "Desarrollador FullStack",
             size="5",
-        ),
+            fontFamily="monospace",),
+
         rx.stack(
             rx.link(
                 rx.button(
@@ -33,7 +34,7 @@ def about() -> rx.Component:
                     color_scheme="purple",
                     style=BUTTON_STYLE,
                 ),
-                href="/data/BASTIAN_CV.pdf",
+                href="/data/R_bastian_cv.pdf",
                 is_external=True
             ),
             rx.link(

@@ -3,9 +3,10 @@ import reflex as rx
 def stacks() -> rx.Component:
     skills = {
         "Python": ("notebook", ["Django", "Tkinter", "Pandas", "Numpy"]),
-        "Javascript": ("braces", ["React"]),
+        "Javascript": ("braces", ["React", "Next.js", "Node.js", "Express"]),
         "Base de datos": ("database", ["Mysql", "Postgresql", "Sqlite"]),
         "Control de version": ("github", ["GitHub"]),
+        "AWS": ("cloud", ["EC2", "S3", "IAM"]),
     }
 
     def create_skill_sublist(skill_name, icon, subskills):

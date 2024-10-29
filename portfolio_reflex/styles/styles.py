@@ -22,9 +22,12 @@ BUTTON_STYLE = {
 
 EXPERIENCE_STYLE = {
     "display": "flex",
-    "justifyContent": "space-around",
+    "flexDirection": "column",
+    "justifyContent": "center",
+    "alignItems": "center",
+    "textAlign": "center",
     "flexWrap": "wrap",
-    "padding": "2rem",
+    "padding": "4rem",
     "marginBottom": "2rem"
 }
 

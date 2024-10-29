@@ -1,5 +1,5 @@
 import reflex as rx
-from portfolio_reflex.styles.styles import EXPERIENCE_STYLE
+from portfolio_reflex.styles.styles import ABOUT_STYLE
 
 def experience() -> rx.Component:
     return rx.vstack(
@@ -16,13 +16,13 @@ def experience() -> rx.Component:
 
                 rx.text("01/24 - 04/24", marginLeft="1rem"),
 
-                rx.text("En este puesto colaboré con el equipo de desarrollo Backend, trabajando en un sistema "
-                        "hibrido entre Punto de Venta (POS) y Planificador de recursos empresariales (ERP) "
-                        "durante la estadía en este puesto asumimos las tareas desde "
-                        "diseñar la base de datos, hasta el desarrollo de la API REST, fuimos participe de reuniones "
-                        "semanales para la planificación y revisión de tareas,  ",
-                        size='4')
+                rx.text("• Participé en el desarrollo de una API para un software Punto de venta", rx.spacer(),
+                        "• Diseñé junto a un equipo el modelo de datos del software.", rx.spacer(),
+                        "• Me encargué de crear las peticiones HTTP encargadas de las ventas y detalle de ventas,",
+                         "asegurando la correcta funcionalidad y eficiencia del sistema.",
+                        size='4',
+                        justifyContent="center",)
             )
         ),
-        style=EXPERIENCE_STYLE
+        style=ABOUT_STYLE
     )

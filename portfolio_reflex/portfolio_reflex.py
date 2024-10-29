@@ -19,11 +19,10 @@ def index() -> rx.Component:
         ),
 
         about(),
-        rx.spacer(),
-        stacks(),
-        rx.spacer(),
+
         projects(),
         rx.spacer(),
+        stacks(),
         experience(),
         style=PAGE_CONTAINER_STYLE,
         background="radial-gradient(circle at 22% 11%, rgba(62, 180, 137, .57), hsla(0, 0%, 100%, 0) 29%), " # verde
